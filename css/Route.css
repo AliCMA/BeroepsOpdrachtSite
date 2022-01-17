@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 100px;
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    z-index: 12;
+}
+
+.logo{
+    font-family: 'Bebas Neue';
+    font-size: 25px;
+    padding: 50px;
+    margin-left: 50px;
+}
+
+
+.logo a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo a:hover{
+    color: #fff;
+}
+
+.logo2{
+    font-family: 'Bebas Neue';
+    font-size: 25px;
+    padding: 50px;
+    margin-left: 50px;
+}
+
+.logo2 a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo2 a:hover{
+    color: #fff;
+}
+
+
+
+.nav_bar{
+    font-family: 'poppins';
+    font-size: 20px;
+    float: right;
+    list-style: none;
+}
+
+.nav_bar li{
+    display: inline-block;
+}
+
+.nav_bar li a{
+    padding: 15px;
+}
+
+.nav_bar li a:hover{
+    background: #7D7A7A;
+    color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    border-width: 0 auto;
+}
+
+article{
+    width:100%;
+    margin: 0 auto;
+    padding:40px;
+}
+
+footer{
+    height: 100px;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    width: 100%;
+    z-index: 12;
+}
+
+footer{  
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;         
+    width: 100%;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;      
+}
+
+#container{
+background-color: aliceblue;
+width: 900px;
+height: 600px;
+margin: 50px auto auto auto;
+display: grid;
+grid-template-columns: auto auto;
+border: inset 2px gray;
+}
+          
+#myInteraction{
+padding: 10px;
+}
+
