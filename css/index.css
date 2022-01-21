@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 header{
@@ -17,6 +18,12 @@ header{
     margin-left: 50px;
 }
 
+.watistedoen{
+    font-family: 'Bebas Neue';
+    font-size: 25px;
+    padding: 50px;
+    margin-left: 50px;
+}
 
 .logo a{
     color: #fff;
@@ -111,7 +118,13 @@ footer{
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;      
-    }
+}
+
+.bestel{
+    color: red;
+}
+
+
 
 
 

@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 header{
@@ -104,5 +105,30 @@ border: inset 2px gray;
           
 #myInteraction{
 padding: 10px;
+}
+
+.bestel{
+color: red;
+}
+
+#container{
+    background-color: aliceblue;
+    width: 900px;
+    height: 600px;
+    margin: 50px auto auto auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    border: inset 2px gray;
+}
+
+#myinteraction{
+    padding: 10px;
+}
+
+
+#mapimage{
+    max-width: 100%;
+    margin-top: 20px;
+    height: auto;
 }
 

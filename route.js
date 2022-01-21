@@ -1,132 +1,127 @@
-const myTitle = document.getElementById("myTitle");
+const mytitle = document.getElementById("mytitle");
+const myimage = document.getElementById("myimage");
+const myinput = document.getElementById("myinput");
 
-const myImage = document.getElementById("myImage");
-
-const myInput = document.getElementById("myInput")
-
-
-
-let lokaties =[
-
-{
-
-   "titel":"Locatie 1",
-
-   "image":"img/s-1.jpg"
-
-},
-
-{
-
-   "titel":"Locatie 2",
-
-   "image":"img/2.jpg"
-
-},
-
-{
-
-   "titel":"Locatie 3",
-
-   "image":"img/3.jpg"
-
-},
-
-{
-
-   "titel":"Locatie 4",
-
-   "image":"img/4.jpg"
-
-},
-
-{
-
-   "titel":"Locatie 5",
-
-   "image":"img/5.jpg"
-
-},
-
-{
-
-   "titel":"Locatie 6",
-
-   "image":"img/6.jpg"
-
-},
-
-{
-
-   "titel":"Locatie 7",
-
-   "image":"img/7.jpg"
-
-},
-
-{
-
-   "titel":"Locatie  8",
-
-   "image":"img/8.jpg"
-
-},
-
-{
-
-   "titel":"Locatie 9",
-
-   "image":"img/9.jpg"
-
-},
-
-{
-
-   "titel":"Locatie 10",
-
-   "image":"img/10.jpg"
-
-},
-
-{
-
-   "titel":"Locatie 11",
-
-   "image":"img/11.jpg"
-
+let directionButtons = {
+    "noord": document.getElementById('knopNoord'),
+    "oost": document.getElementById('knopOost'),
+    "zuid":  document.getElementById('knopZuid'),
+    "west": document.getElementById('knopWest')
 }
+
+let current_index = 0;
+
+
+let lokaties =[ // array
+    { // 0 = object
+        "titel":"Scheepvaartsmusuem",
+        "image":"img/interactievelogo.jpg",
+        
+    },
+    {  //1 = object 
+        "titel":"plaats 1",
+        "image":"img/1.jpg",
+      
+    },    
+    {
+        "titel":"plaats 2",
+        "image":"img/2.jpg",
+        
+    },
+    {
+        "titel":"plaats 3",
+        "image":"img/3.jpg",
+        
+    },
+    {
+        "titel":"plaats 4",
+        "image":"img/4.jpg",
+            
+        
+    },
+    {
+        "titel":"plaats 5",
+        "image":"img/5.jpg",
+       
+    },
+    {
+        "titel":"plaats 6",
+        "image":"img/6.jpg",
+        
+    },
+    {
+        "titel":"plaats 7",
+        "image":"img/7.jpg",
+      
+    },
+    {
+        "titel":"plaats 8",
+        "image":"img/8.jpg",
+        
+    },
+    {
+        "titel":"plaats 9",
+        "image":"img/9.jpg",
+    },
+    {
+        "titel":"plaats 10",
+        "image":"img/10.jpg",
+       
+    },
+    {
+        "titel":"plaats 11",
+        "image":"img/11.jpg",
+       
+    }
 
 ]
 
 
 
-
-//myTitle.innerHTML = "dit is door de script toegevoegd";
-
-//myImage.src = "img/1.jpg";
-
-
-
+//mytitle.innerHTML = "dit is gevoegd door java";
+//myimage.src = "img/1.jpg";
 
 function show(index){
+    mytitle.innerHTML = lokaties[index].titel;
+    myimage.src = lokaties[index].image;
+    current_index = index;
 
-   myTitle.innerHTML = lokaties[index].titel;
-
-   myImage.src = lokaties[index].image;
-
+    //knoppen opnieuw berekenen
+    updateDirections();
 }
 
+function updateDirections(){
 
+    let possible = lokaties[current_index].directions;
 
+    let possible_keys = Object.keys(possible);
+
+    console.log(possible);
+    console.log(possible_keys);
+
+    let button_keys = Object.keys(directionButtons);
+    console.log(button_keys);
+
+    for(const key of button_keys){
+        directionButtons[key].style.visibility = "hidden";
+    }
+
+    for(const key of possible_keys){
+        directionButtons[key].style.visibility = 'visible';
+    }
+
+}
 
 function getinput(){
-
-   show(myInput.value);
-
-   //console.log(myInput.value)
-
-   myInput.value = "";
-
-   myInput.focus();
-
+    show(myinput.value);
+    //console.log(myinput.value)
+    myinput.value = "";
+    myinput.focus();
 }
+
+function goDirection(direction){
+    let punt_index = lokaties[current_index].directions[direction];
+    show(punt_index)
+}
+
+show(0)

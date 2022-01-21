@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 header{
@@ -93,11 +94,20 @@ footer{
     }
 
 
-.spatie{
-    color: white;
-}
-
 .geschiedenis{
     text-align: center;
 }
 
+.bestel{
+    color: red;
+}
+
+.watistedoen{
+    font-family:'Rubik';
+    font-size: 25px;
+    padding: 50px;
+    margin-left: 50px;
+    font-family: 'Aclonica', sans-serif;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Rubik', sans-serif;
+}
