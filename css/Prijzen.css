@@ -96,3 +96,71 @@ footer{
 .bestel{
     color: red;
 }
+
+
+*{
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.padding{
+    border-top: 1px solid #009dff;
+    display: flex;
+  }
+  .textblock--table td {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    padding: 1.625rem 0 2.125rem 0;
+  }
+  .textblock--table td {
+    font-size: .9375rem;
+    line-height: 1.5rem;
+    color: #009dff;
+    font-weight: 400;
+    border-bottom: 1px solid #009dff;
+    padding: .9375rem 0 .9375rem 0;
+  }
+  table tbody tr td, table tbody tr th, table tfoot tr td, table tfoot tr th, table thead tr th, table tr td {
+    display: table-cell;
+    line-height: 1.75;
+  }
+  table tr td, table tr th {
+    color: #242422;
+    font-size: 1rem;
+    padding: .9375rem 0;
+    text-align: left;
+  }
+  blockquote, dd, div, dl, dt, form, h1, h2, h3, h4, h5, h6, li, ol, p, pre, td, th, ul {
+    margin: 0;
+    padding: 0;
+  }
+  td, th {
+    padding: 0;
+  }
+  *, ::after, ::before {
+    box-sizing: border-box;
+  }
+  .textblock--table table {
+    border-collapse: inherit;
+    border-spacing: 1.25rem 0;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  body {
+    color: #000000;
+    cursor: auto;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  body, html {
+    font-size: 100%;
+  }
+  html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
