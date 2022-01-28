@@ -19,57 +19,57 @@ let lokaties =[ // array
         
     },
     {  //1 = object 
-        "titel":"Locatie 1",
+        "titel":"Location 1",
         "image":"img/1.jpg",
       
     },    
     {
-        "titel":" Locatie 2",
+        "titel":"Location 2",
         "image":"img/2.jpg",
         
     },
     {
-        "titel":"Locatie 3",
+        "titel":"Location 3",
         "image":"img/3.jpg",
         
     },
     {
-        "titel":"Locatie 4",
+        "titel":"Location 4",
         "image":"img/4.jpg",
             
         
     },
     {
-        "titel":"Locatie 5",
+        "titel":"Location 5",
         "image":"img/5.jpg",
        
     },
     {
-        "titel":"Locatie 6",
+        "titel":"Location 6",
         "image":"img/6.jpg",
         
     },
     {
-        "titel":"Locatie 7",
+        "titel":"Location 7",
         "image":"img/7.jpg",
       
     },
     {
-        "titel":"Locatie 8",
+        "titel":"Location 8",
         "image":"img/8.jpg",
         
     },
     {
-        "titel":"Locatie 9",
+        "titel":"Location 9",
         "image":"img/9.jpg",
     },
     {
-        "titel":"Locatie 10",
+        "titel":"Location 10",
         "image":"img/10.jpg",
        
     },
     {
-        "titel":"Locatie 11",
+        "titel":"Location 11",
         "image":"img/11.jpg",
        
     }
